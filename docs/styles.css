@@ -36,8 +36,6 @@ input[type="time"] {
   box-shadow: 0 0 20px rgba(249, 138, 138, 0.1);
 }
 
-
-
 button {
   background-color: #007BFF;
   color: #fff;
@@ -60,10 +58,38 @@ ul {
 
 li {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+    justify-content: center;
   align-items: center;
-  padding: 8px 0;
-}
+  margin-top: 5px;
+    padding: 10px 0;
+  }
+  
+  li span:first-child {
+    margin-right: 10px;
+    margin-top: 5px;
+    flex-grow: 1;
+  }
+  
+  li span:last-child {
+  
+    color: #888;
+  }
+  
+  
+  
+  li button {
+    background-color: #FF3547;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  li button:hover {
+    background-color: #d9534f;
+  }
 
 .completed {
   text-decoration: line-through;
